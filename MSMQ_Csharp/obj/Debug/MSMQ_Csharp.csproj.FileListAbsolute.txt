@@ -1,0 +1,12 @@
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.frmReceiver.resources
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.Properties.Resources.resources
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.csproj.GenerateResource.cache
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.csproj.CoreCompileInputs.cache
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\bin\Debug\MSMQ_Csharp.exe.config
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\bin\Debug\MSMQ_Csharp.exe
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\bin\Debug\MSMQ_Csharp.pdb
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\bin\Debug\Apache.NMS.ActiveMQ.dll
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\bin\Debug\Apache.NMS.dll
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.csproj.CopyComplete
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.exe
+T:\19431791_LeTuan_KTPM\K1N4_KTPM_GK\MSMQ_Csharp\obj\Debug\MSMQ_Csharp.pdb

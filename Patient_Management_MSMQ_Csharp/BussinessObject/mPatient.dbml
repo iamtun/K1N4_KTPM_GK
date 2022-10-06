@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="patient_management" Class="mPatientDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7A8D61I\SQLEXPRESS;Initial Catalog=patient_management;Integrated Security=True" SettingsObjectName="BussinessObject.Properties.Settings" SettingsPropertyName="patient_managementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.doctor" Member="doctors">
+    <Type Name="doctor">
+      <Column Name="id" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="full_name" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="doctor_medical_examination" Member="medical_examinations" ThisKey="id" OtherKey="doctor_id" Type="medical_examination" />
+    </Type>
+  </Table>
+  <Table Name="dbo.medical_examination" Member="medical_examinations">
+    <Type Name="medical_examination">
+      <Column Name="patient_id" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="doctor_id" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="exam_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="note" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="doctor_medical_examination" Member="doctor" ThisKey="doctor_id" OtherKey="id" Type="doctor" IsForeignKey="true" />
+      <Association Name="patient_medical_examination" Member="patient" ThisKey="patient_id" OtherKey="id" Type="patient" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.patient" Member="patients">
+    <Type Name="patient">
+      <Column Name="id" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="identity_number" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="full_name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="patient_medical_examination" Member="medical_examinations" ThisKey="id" OtherKey="patient_id" Type="medical_examination" />
+    </Type>
+  </Table>
+</Database>
